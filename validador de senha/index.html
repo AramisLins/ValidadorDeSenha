@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <title>Validação-JS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="pass-field">
+            <input type="password" placeholder="Digite sua Senha">
+            <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="content">
+            <p>A senha deve conter: </p>
+            <ul class="requeriment-list">
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>No mínimo 8 caracteres</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>um número entre 0 e 9</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>uma letra minúscula </span>
+                    
+                    
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>um símbolo especial</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>uma letra maiúscula</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="src/js/validacao.js"></script>
+</body>
+
+</html>

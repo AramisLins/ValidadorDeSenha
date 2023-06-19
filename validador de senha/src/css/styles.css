@@ -1,0 +1,102 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #11131e;
+}
+.wrapper{
+    width: 450px;
+    overflow: hidden;
+    padding: 28px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0  10px 25px rgba(0, 0, 0, 0.06);
+}
+.wrapper .pass-field{
+    height: 65px;
+    width: 100%;
+    position: relative;
+}
+.pass-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 17px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+
+}
+.pass-field input:focus{
+    padding: 0 16px;
+    border: 2px solid #4285f4;
+}
+.pass-field i{
+    right: 18px;
+    top: 50%;
+    font-size: 1.2rem;
+    color:  #999;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.wrapper .content{
+    margin: 20px 0 10px;
+}
+.content p{
+    color: #333;
+    font-size: 1.3rem;
+}
+.content .requeriment-list{
+    margin-top: 20px;
+}
+.requeriment-list li{
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.requeriment-list li i{
+    width: 20px;
+    color: #aaa;
+    font-size: 0.6rem;
+}
+.requeriment-list li.valid i{
+    font-size: 1.2rem;
+    color:#4285F4;
+
+}
+.requeriment-list li span{
+    margin-left: 12px;
+    color: #333;
+}
+.requeriment-list li.valid span{
+    color: #00e413;
+}
+@media screen and (max-width: 500px){
+    body, .wrapper{
+        padding: 15px;
+    }
+    .wrapper .pass-field{
+        height: 55px;
+    }
+    .pass-field input, .content p{
+        font-size: 1.15rem;
+    }
+    .pass-field i, .requeriment-list li{
+        font-size: 1.1rem;
+    }
+    .requeriment-list li span{
+        margin-left: 7px;
+    }
+}
+
